@@ -1,0 +1,270 @@
+:root {
+    --primary: #3336FF; 
+    --secondary: #0ca17038;
+    --third: #5a5a5a3a;
+    --wordsw: white;
+    --wordsb: black;
+    --welcome: 'Indie Flower', cursive;
+    --welcometitle: #ff893a;
+    --titles: #ffefff;
+    --titlesf: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --name: 'Ranchers', cursive;
+    --peachback: rgb(247, 194, 148);
+}  
+
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+
+}
+
+body {
+color: #03c081ef;
+font-family: sans-serif;
+}
+/* Header and Nav START */
+header {
+padding: 10px 30px;
+background-image: url("../images/waves.jpg");
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+position: sticky;
+position: -webkit-sticky;
+top: 0;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+background-position: 80%;
+
+} 
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px 10px;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+
+  
+}
+
+header h1 {
+font-size: 40px;
+color: var(--wordsw);
+font-family: var(--name);
+margin: 6px 20px;
+font-weight: 50px;
+justify-content: space-around;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--wordsw);
+}
+
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+header nav ul li a {
+  padding: 5px 12px;
+  font-size: 30px;
+  text-shadow: 0 0 20px rgb(255, 255, 255);
+  margin: 2px 10px;
+  justify-content: space-around;
+  justify-content: center;
+  
+}
+header nav ul li a:hover {
+  background: rgba(255, 127, 54, 0.767);
+  border-radius: 15px 50px 15px;
+}
+/* Header and Nav End */
+/* Footer Start */
+footer {
+  display: flex;
+  justify-content: center;
+}
+/* Footer End */
+/* Hero Start */
+.hero {
+  background-image: url("../images/waves.jpg");
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: 80%;
+  min-height: 500px;
+}
+.herotitle {
+  color: var(--welcometitle);
+  margin: 20px 0;
+  font-family: var(--welcome);
+  font-size: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-shadow: 0 0 10px rgb(255, 255, 255);
+}
+/* Hero END */
+/* Who Section Start */
+.whosec {
+  border-top: 5px solid rgb(40, 36, 247);
+  display: flex;
+  justify-content: space-around;
+  justify-content: center;
+  background: var(--peachback);
+  align-items: center;
+  padding: 0 40px;
+  margin: 0 auto;
+      
+}
+.whotitle {
+  font-size: 40px;
+  width:25%;
+  text-align: center;
+  margin-right: 10px;
+  font-family: var(--titlesf);
+  color: var(--titles);
+  }
+.whoimg {
+  margin: 20px;
+  min-width: 50px;
+  width: 30%;
+}
+.whosec p {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  color:white;
+  padding: 0 20px;
+  justify-content: center;
+  width: 40%;
+  font-size: 1.3vw;
+  contain: content;
+
+}
+/* Who Section END */
+/* What Section Start */
+.whatsec {
+  background: #0552aa;
+  
+}
+.whattitle {
+  color: var(--titles);
+  font-family: var(--titlesf);
+  padding: 40px 10px 20px 30px;
+  font-size: 40px;
+}
+.whatsec-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  padding: 0 15px;
+
+}
+.whatgrid {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  font-size: 1.3rem;
+  flex-wrap: wrap;
+  
+}
+.griditem {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.textleft {
+  text-align: left;
+}
+.textright {
+  text-align: right;
+}
+.info1 {
+  color: yellow;
+  font-size: 1.35vw;
+  grid-column: 1/ span 2;
+  padding: 10px 0 0 10px;
+}
+.griditem.project1 {
+  grid-column: 5;
+}
+.griditem.project2 {
+  grid-row: 2;
+}
+.griditem.project3 {
+  grid-row: 3;
+  grid-column: 5;
+}
+.griditem.project4 {
+  grid-row: 4;
+  grid-column: 1;
+}
+.griditem.info2 {
+  grid-column: 5;
+  grid-row: 5;
+  justify-content: center;
+  align-items: flex-start;
+  color: var(--wordsw);
+  font-size: 1.33vw;
+}
+/* What Ive Done END */
+/* Been Sec Start */
+.beensec {
+  background: var(--peachback);
+  border-top: 5px solid rgb(40, 36, 247);
+  padding-bottom: 20px;
+}
+.beenimg {
+  display: flex;
+  justify-content: center;
+}
+/* Been Sec END */
+/* FIND ME Start */
+.wheresec {
+  
+  background: grey;
+  padding: 20px;
+
+}
+.wheretitle {
+  color: var(--wordsw);
+  padding: 20px;
+  font-size: 40px;
+}
+.wherebox {
+  display: flex;
+  font-style: italic;
+  color: var(--wordsw);
+  justify-content: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  width: 30%;
+ }
+ .wherebox h3 {
+   margin: 10px;
+ }
+ .whereinfo {
+   margin-top: 10px;
+   border: 2px solid; 
+   padding: 10px;
+   font-style: normal;
+  }
+/* Find ME END */
