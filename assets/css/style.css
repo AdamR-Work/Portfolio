@@ -142,6 +142,9 @@ footer {
   min-width: 50px;
   width: 30%;
 }
+.whoimg img{
+  width: 400px;
+}
 .whosec p {
   display: flex;
   flex-wrap: wrap;
@@ -220,7 +223,9 @@ footer {
 .griditem:hover .project1::after {
   opacity: 1;
 }
-
+.project1 img {
+  width: 500px;
+}
 .project1::after {
   content: "";
   height: 100%;
