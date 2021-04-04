@@ -1,12 +1,8 @@
 {
-  "name": "adams-porfolio",
+  "name": "portfolio",
   "version": "1.0.0",
   "description": "​ **Quick Look**",
   "main": "index.js",
-  "dependencies": {
-    "heroku": "^7.51.0"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
